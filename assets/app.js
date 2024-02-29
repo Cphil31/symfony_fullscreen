@@ -6,5 +6,27 @@ import './bootstrap.js';
  * which should already be in your base.html.twig.
  */
 import './styles/app.css';
+window.onload = function () {
 
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+    const acceuil = document.querySelector('#acceuil');
+    
+    const presentation = document.querySelector('#presentation');
+    
+    const contact = document.querySelector('#contact');
+    
+    acceuil.addEventListener('click', () => window.scrollTo({
+        top: 400,
+        behavior: 'smooth',
+      }));
+
+      presentation.addEventListener('click', () => window.scrollTo({
+        top: 400,
+        behavior: 'smooth',
+      }));
+
+      contact.addEventListener('click', () => window.scrollTo({
+        top: 400,
+        behavior: 'smooth',
+      }));
+      
+}

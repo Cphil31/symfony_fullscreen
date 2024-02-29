@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+
+
+{% block body %}
+
+<div id="menu" style="position:fixed">
+    <ul>
+        <li>
+            <a href={{path("app_home")}}#acceuil >
+                Acceuil
+            </a>
+        </li>
+        <li>
+            <a href={{path("app_home")}}#presentation>
+                Presentation
+            </a>
+        </li>
+        <li>
+            <a href={{path("app_home")}}#contact>
+                Contact
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div id="acceuil">
+    <h1>{{ controller_name }}! ✅</h1>
+
+</div>
+
+<div id="presentation">
+    <h1>
+        Presentation ✅
+    </h1>
+</div>
+
+<div id="contact">
+    <h1>
+        Contact ✅
+    </h1>
+</div>
+
+{% endblock %}
